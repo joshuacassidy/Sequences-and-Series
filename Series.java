@@ -14,9 +14,6 @@ public class Series {
     }
 
     public static long fibonacci(int n){
-        if (n < 2) {
-            return n;
-        }
         long x = 1;
         long y = 0;
         long output = 0;
@@ -25,7 +22,7 @@ public class Series {
             y = x;
             x = output;
         }
-        return output;
+        return n < 2 ? n : output;
     }
 
 }
